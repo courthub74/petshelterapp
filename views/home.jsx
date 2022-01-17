@@ -1,6 +1,7 @@
 import React from 'react'
 import DefaultLayout from './layouts/default'
 import Nav from './components/Nav'
+import Footer from './components/Footer'
 
 function Home(props) {
     return (
@@ -8,6 +9,7 @@ function Home(props) {
         <DefaultLayout>
             <Nav />
             <h1>Default Layout Homepage with ReactJS</h1>
+            <Footer />
         </DefaultLayout>
     )
 }

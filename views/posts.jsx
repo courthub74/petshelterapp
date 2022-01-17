@@ -1,9 +1,16 @@
 import React from 'react'
+import DefaultLayout from './layouts/default'
+import Nav from './components/Nav'
+import Footer from './components/Footer'
 
 
 function Posts(props) {
     return (
-        <h1>Posts Page</h1>
+        <DefaultLayout>
+            <Nav />
+             <h1>Posts Page with ReactJS</h1>
+            <Footer />
+        </DefaultLayout>
     )
 }
 
