@@ -2,6 +2,7 @@ const express = require('express')
 const app = express();
 const port = 8080;
 
+//set the jsx engine
 app.set('view engine', 'jsx')
 
 //still need to activate the engine

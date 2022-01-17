@@ -5,10 +5,9 @@ import Nav from './components/Nav'
 function Home(props) {
     return (
         // <h1>Home Page</h1>
-        <DefaultLayout title="Home Page">
+        <DefaultLayout>
             <Nav />
-            <h1>Default Layout Homepage </h1>
-            { props.data }
+            <h1>Default Layout Homepage with ReactJS</h1>
         </DefaultLayout>
     )
 }
