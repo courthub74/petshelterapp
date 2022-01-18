@@ -1,0 +1,18 @@
+{
+    "dataton": [{
+        "id": "1",
+        "name": "Blondie",
+        "style": "Paralell Lines",
+        "img": "https://img.search.brave.com/B1Wn7Xdba0LN1AoZS--mf_OkmIhSmtjytc1G-KvJx3U/fit/900/600/ce/1/aHR0cDovL2tzYXNz/ZXRzLnRpbWVpbmN1/ay5uZXQvd3AvdXBs/b2Fkcy9zaXRlcy81/NS8yMDE0LzAyL0Js/b25kaWVQQURlYmJp/ZS1IYXJyeS0xLTIu/anBn"
+    }, {
+        "id": "2",
+        "name": "Blondie",
+        "style": "On Stage",
+        "img": "https://img.search.brave.com/M2m2wC_V78_Wiapp4ZtjCrZt8drBcHqfVuG7ZuiN3dw/fit/960/720/ce/1/aHR0cHM6Ly9pLnl0/aW1nLmNvbS92aS9q/eVFuV1BNaUxMOC9t/YXhyZXNkZWZhdWx0/LmpwZw"
+    }, {
+        "id": "3",
+        "name": "Blondie",
+        "style": "Models",
+        "img": "https://img.search.brave.com/XHy9NHyIofozibQhyHFkDt-BuzJ8MvSbarZ8KP8nOSg/fit/1200/720/ce/1/aHR0cHM6Ly9kLm5l/d3N3ZWVrLmNvbS9l/bi9mdWxsLzEyOTEw/MDMvY3VsLWJsb25k/aWUtMDEtNzQyNTM5/MDUtdXNlLWJhbm5l/ci5qcGc_dz0xNDQw/Jmg9NzIwJmY9Yjdl/ZTdiNzQ4MDI1YjRh/MzljNzc5NjgyMDBm/NzY2NDc"
+    }]
+}

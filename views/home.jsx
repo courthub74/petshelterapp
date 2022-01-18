@@ -8,7 +8,27 @@ function Home(props) {
         // <h1>Home Page</h1>
         <DefaultLayout>
             <Nav />
+            <main>
+                <section class="cats">
+                 <ul> {props.data.petters.map(pet => (  //props.thefoldername.theobjectname.map
+                    <li>
+                        <img src={pet.img} alt="" />
+                        <h3>{pet.name}</h3>
+                        <p><span>Breed: </span>{pet.breed}</p>
+                        <p><span>Description: </span>{pet.description}</p>
+                    <ul>
+                        <li>Change Info</li>
+                        <li>Delete</li>
+                    </ul>
+                    </li>
+                    ))}
+                </ul>
+             
+                </section>
+            </main>
             <h1>Default Layout Homepage with ReactJS</h1>
+
+            
             <Footer />
         </DefaultLayout>
     )

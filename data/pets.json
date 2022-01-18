@@ -1,21 +1,21 @@
 {
-    "pets": [{
+    "petters": [{
         "id": "1",
         "name": "Pretty Kitty",
-        "img": "https://cdn.pixabay.com/photo/2016/03/28/12/35/cat-1285634_960_720.png",
+        "img": "https://img.search.brave.com/xIY-xNVqk7YlLPXlJb7rI9n4UWwCUy9KYE0e6IaM4Rc/fit/1200/1200/ce/1/aHR0cHM6Ly93d3cu/ZmV0Y2hmaW5kLmNv/bS9ibG9nL3dwLWNv/bnRlbnQvdXBsb2Fk/cy8yMDE3LzA4L2Nh/dC0yNzM0OTk5XzE5/MjAtNS1jb21tb24t/Y2F0LXNvdW5kcy5q/cGc",
         "breed": "Bombay Cat",
         "description": "Dominant and aggressive to other cats. Will probably eat you in your sleep. Very cute tho."
     }, {
         "id": "2",
-        "name": "Pretty Kitty 2",
-        "img": "https://cdn.pixabay.com/photo/2016/03/28/12/35/cat-1285634_960_720.png",
+        "name": "Kitty 2",
+        "img": "https://img.search.brave.com/_KY7r4j66W0-htlwVwpk1JpUr2g7K6LJ4SASTNU3KEI/fit/759/225/ce/1/aHR0cHM6Ly90c2Uz/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5J/QldPRmVqRTFneVhF/S09nYXBTN21nSGFF/byZwaWQ9QXBp",
         "breed": "Bombay Cat 2",
-        "description": "Cool cat 2"
+        "description": "This cat is hungry and does a sniff test for food"
     }, {
         "id": "3",
         "name": "Pretty Kitty 3",
-        "img": "https://cdn.pixabay.com/photo/2016/03/28/12/35/cat-1285634_960_720.png",
+        "img": "https://img.search.brave.com/4bWU89p2MTkwRcON0p-m0Tr2KxDqBE7MwHEvHuA46UM/fit/474/225/ce/1/aHR0cHM6Ly90c2U0/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC4x/VnVPdkJ4Vklqb2lE/MFV2eDQtb3V3SGFI/YSZwaWQ9QXBp",
         "breed": "Bombay Cat 3",
-        "description": "cool cat 3"
+        "description": "This cat is up for it"
     }]
 }

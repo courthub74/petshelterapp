@@ -6,7 +6,7 @@ import Footer from './components/Footer'
 
 function Posts(props) {
     return (
-        <DefaultLayout>
+        <DefaultLayout title="Home Page">
             <Nav />
              <h1>Posts Page with ReactJS</h1>
             <Footer />

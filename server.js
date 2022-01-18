@@ -2,6 +2,13 @@ const express = require('express')
 const app = express();
 const port = 8080;
 
+//get the 'pets' info from json
+const pets = require('./data/pets.json')
+
+//experimental 'dataton' info 
+const dataton = require('./data/dataton.json')
+
+
 //set the jsx engine
 app.set('view engine', 'jsx')
 
@@ -14,13 +21,13 @@ app.use(express.static('public')) //images,css,custom js
 //create the root route (home page)
 app.get("/", (req, res) => {
     res.status(200);
-    res.render('home')
+    res.render('home', { data: pets })
 })
 
 //create the (about page) route
 app.get("/about", (req, res) => {
     res.status(200);
-    res.render('about')
+    res.render('about', { data: dataton })
 })
 
 //create the (addcat page) route
