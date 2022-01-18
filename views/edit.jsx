@@ -3,16 +3,18 @@ import DefaultLayout from './layouts/default'
 import Nav from './components/Nav'
 import Footer from './components/Footer'
 
-
-function About(props) {
+const Edit = ({ img, name, alt, breed, description }) => {
     return (
-        <DefaultLayout title="Home Page">
+        <DefaultLayout title="Edit Cat">
             <Nav />
-                About
+            <form>
+                
+                <h2>Edit Cat</h2>
+             
+            </form>
             <Footer />
         </DefaultLayout>
-        
     )
 }
 
-module.exports = About
+module.exports = Edit
