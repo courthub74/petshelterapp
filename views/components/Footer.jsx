@@ -7,7 +7,7 @@ function Footer() {
                 <ul className='footer-nav'>
                     <li><a href="/">Home</a></li>
                     <li><a href="/about">About</a></li>
-                    <li><a href="/data">Data</a></li>
+                    <li><a href="/blondie">Blondie</a></li>
                 </ul>
             </nav>
         </footer>

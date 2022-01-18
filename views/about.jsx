@@ -8,7 +8,7 @@ function About(props) {
     return (
         <DefaultLayout title="Home Page">
             <Nav />
-                About
+                <h1>About</h1>
             <Footer />
         </DefaultLayout>
         

@@ -1,6 +1,7 @@
 const express = require('express')
 const app = express();
 const port = 8080;
+const cors = require("cors")()
 
 //get the 'pets' info from json
 const pets = require('./data/pets.json')
@@ -43,10 +44,19 @@ app.get("/addbreed", (req, res) => {
 })
 
 //create the (edit page) route
+    //goes to the (edit page)
 app.get("/edit", (req, res) => {
     res.status(200);
     res.render('edit')
 })
+
+//create the (edit page) route
+    //POSTS to the edit page
+app.post("/edit", (req, res) => {
+    console.log(req.body);
+    const { name, description, breed } = req.body;
+    res.send(name);
+});
 
 //create the (posts page) route
 app.get("/posts", (req, res) => {

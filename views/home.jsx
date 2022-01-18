@@ -16,9 +16,9 @@ function Home(props) {
                         <h3>{pet.name}</h3>
                         <p><span>Breed: </span>{pet.breed}</p>
                         <p><span>Description: </span>{pet.description}</p>
-                    <ul>
-                        <li>Change Info</li>
-                        <li>Delete</li>
+                    <ul class="buttons">
+                        <li class="btn edit"><a href="/edit">Change Info</a></li>
+                        <li class="btn edit"><a href="">Delete</a></li>
                     </ul>
                     </li>
                     ))}
