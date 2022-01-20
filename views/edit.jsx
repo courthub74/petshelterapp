@@ -3,10 +3,12 @@ import DefaultLayout from './layouts/default'
 import Nav from './components/Nav'
 import Footer from './components/Footer'
 
-const Edit = ({ img, name, alt, breed, description }) => {
+const Edit = (props) => {
     return (
+        
         <DefaultLayout title="Edit Cat">
             <Nav />
+            {props.message ? <h2>{props.message}</h2> : null}
             <form
                 // action="/edit"
                 method="POST"
@@ -33,6 +35,7 @@ const Edit = ({ img, name, alt, breed, description }) => {
 
                 <select id="group" name="breed">
                     <option value="Fluffy Cat">Fluffy Cat</option>
+                    <option value="Hunter Cat">Hunter Cat</option>
                 </select>
 
                 <button>Edit Cat</button>

@@ -10,9 +10,16 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.19.1",
+    "bp": "^0.1.1-beta",
+    "cors": "^2.8.5",
+    "cross-fetch": "^3.1.4",
     "express": "^4.17.2",
+    "express-async-handler": "^1.2.0",
     "express-engine-jsx": "^3.4.2",
+    "express-form-data": "^2.0.17",
     "express-react-views": "^0.11.0",
+    "fetch": "^1.1.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
   },

@@ -1,7 +1,16 @@
 const express = require('express')
 const app = express();
 const port = 8080;
-const cors = require("cors")()
+const cors = require("cors")();
+const bp = require("body-parser");
+const fetch = require("cross-fetch");
+const asynchanlder = require("express-async-handler");
+const formData = require("express-form-data");
+
+app.use(bp.json());
+
+app.use(formData.parse());
+app.use(express.json());
 
 //get the 'pets' info from json
 const pets = require('./data/pets.json')
@@ -46,8 +55,9 @@ app.get("/addbreed", (req, res) => {
 //create the (edit page) route
     //goes to the (edit page)
 app.get("/edit", (req, res) => {
+    console.log(req.query)
     res.status(200);
-    res.render('edit')
+    res.render('edit', req.query );
 })
 
 //create the (edit page) route
@@ -55,7 +65,9 @@ app.get("/edit", (req, res) => {
 app.post("/edit", (req, res) => {
     console.log(req.body);
     const { name, description, breed } = req.body;
-    res.send(name);
+    // res.send(name);
+    //redirect for the get method
+    res.redirect("/edit?message=Successfully Submitted")
 });
 
 //create the (posts page) route
