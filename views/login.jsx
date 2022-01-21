@@ -1,12 +1,12 @@
 import React from 'react'
 import DefaultLayout from './layouts/default'
 import Nav from './components/Nav'
-import Footer from './components/Footer'
 
 const Login = (props) => {
     return (
-        <DefaultLayout>
+        <DefaultLayout title="Edit Cat">
             <Nav />
+            {props.message ? <h2>{props.message}</h2> : null}
             <form
                 //Required
                 action="/login"
@@ -17,17 +17,16 @@ const Login = (props) => {
                 >
                 <h2>Login</h2>
 
-                <div className=''>
-                    <input type="text" name="email" placeholder='Add email here....' />
-                </div>
+                    <div className=''>
+                        <input type="text" name="email" placeholder='Add email here....' />
+                    </div>
 
-                <div className=''>
-                    <input type="text" name="password" placeholder='Add password....' />
-                </div>
+                    <div className=''>
+                        <input type="text" name="password" placeholder='Add password....' />
+                    </div>
 
                 <button type="submit">Login</button>
             </form>
-            <Footer />
         </DefaultLayout>
     )
 }

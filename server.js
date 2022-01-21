@@ -90,8 +90,24 @@ app.post("/edit", (req, res) => {
 
 //create the (login page) route
 app.get("/login", (req, res) => {
-    res.status(200)
-    res.render("login")
+    res
+        .status(200)
+        .render("login")
+})
+
+//create the (login page) POST route
+app.post("/login", (req, res) => {
+    console.log(req.body);
+    const { email, password } = req.body;
+
+    //NOW time to validate the email and password
+    if (email && password) {
+        res.redirect("/");
+    } else {
+        res
+            .status(401)
+            .render("login", { message: "Invalid Username or Password"});
+    }
 })
 
 //create the (posts page) route
