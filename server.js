@@ -12,6 +12,23 @@ app.use(bp.json());
 app.use(formData.parse());
 app.use(express.json());
 
+async function loadPets() {
+    let response = await fetch("http://localhost:8080/pets");
+    return await response.json();
+}
+
+app.get("/pets", (req, res) => {
+    res.status(200);
+    res.json(pets);
+});
+
+app.get("/loadpets", async (req, res) => {
+    res.status(200);
+    console.log(pets2);
+    res.json(pets2);
+});
+  
+
 //get the 'pets' info from json
 const pets = require('./data/pets.json')
 
@@ -29,10 +46,11 @@ app.engine('jsx', require('express-react-views').createEngine())
 app.use(express.static('public')) //images,css,custom js
 
 //create the root route (home page)
-app.get("/", (req, res) => {
+app.get("/", async (req, res) => {
     res.status(200);
-    res.render('home', { data: pets }) //named after the variable used for require
-})
+    let pets2 = await loadPets();
+    res.render('home', { data: pets2 }) //named after the variable used for require
+});
 
 //create the (about page) route
 app.get("/about", (req, res) => {
@@ -69,6 +87,12 @@ app.post("/edit", (req, res) => {
     //redirect for the get method
     res.redirect("/edit?message=Successfully Submitted")
 });
+
+//create the (login page) route
+app.get("/login", (req, res) => {
+    res.status(200)
+    res.render("login")
+})
 
 //create the (posts page) route
 app.get("/posts", (req, res) => {
